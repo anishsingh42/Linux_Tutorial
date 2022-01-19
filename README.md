@@ -14,6 +14,7 @@ ___Learning Linux Essentials___
       2. *`-r` Lists in the reverse order.* <br>
 4. `nano` - to make a file.
 5. `mkdir` - make a directory.
+6. `cat` 
  
  Note: At any point if you want more information on any command one can type `--help`. Example: `ls --help`.
  
@@ -46,9 +47,15 @@ ___File permissions and ownership explained___
 3.  __Change the Permission of the file__ : `sudo chmod <premission_sequence> <file_name>`.
       1. *`6` represents `-rw`*
       2. *`4` represent `r`.*
-      3.  *`7` represents directory.*
+      3. *`2` represents `w`*
+      4. *`1` represents `x`*
+      5.  *`7` represents `-rwx`.*
       
-      Eg: `sudo chmod 664 files.txt`.
+      Eg: `sudo chmod 664 files.txt`.<br>
+      <br>The above statement 664 will give -rw permission to user and group and only read permission to others.
+      To give two or more permission to a file add the tow permission. Eg: for -rw add r+w which will be 4+2=6.<br>
+      <br>Eg: `sudo chmod g-r files.txt`.<br>
+      The above statement g-r removes the read permission from the group.
 
 3.__To remove a singular files__ : `rm <file_name>`. Eg: `rm files.txt`.
 
