@@ -14,7 +14,12 @@ ___Learning Linux Essentials___
       2. *`-r` Lists in the reverse order.* <br>
 4. `nano` - to make a file.
 5. `mkdir` - make a directory.
-6. `cat` 
+6. `cat` - concatenate files and gives output. Helps in create, view and concatenate files.
+      1. `cat file1` - Will give the content of the files 1.
+      2. `cat f1 f2` - output of contents in f1 and f2.
+      3. `cat > f1` - create f1 files and write contents in f1.
+      4. `cat f1 > f2` - create f2 and copy contents of f1 in f2.
+      5. 
  
  Note: At any point if you want more information on any command one can type `--help`. Example: `ls --help`.
  
